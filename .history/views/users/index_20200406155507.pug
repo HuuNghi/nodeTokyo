@@ -1,0 +1,15 @@
+extend ../layouts/common
+block content
+  div(class="controller")
+    h1 User List
+    button.btn.btn-primary
+      a(href="/users/create") New User
+    form(action="/users/search", method="GET", class="d-flex")
+      input(type="text", name="q", value=q, class="form-control mr-2")
+      button(class="btn btn-success") Search
+    ul
+      each user in users
+        li
+          span= user.name
+          span &nbsp;
+          a(href="/users/" + user.id) View

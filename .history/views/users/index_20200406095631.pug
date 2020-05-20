@@ -1,0 +1,12 @@
+extend ../layouts/common
+block content
+  h1 User List
+  form(action="/users/search", method="GET", class="d-flex")
+    input(type="text", name="q", value=q, class="form-control ml-2")
+    button(class="btn btn-success") Search
+  ul
+    each user in users
+      li
+        span= user.name
+        span &nbsp;
+        a(href="/users/" + user.id) View

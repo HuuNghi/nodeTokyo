@@ -1,0 +1,15 @@
+extend ../layouts/common
+block content
+  h1 Create User
+  form(action="/users/create", method="POST")
+    label Name
+    input(type="text", name="name")
+    button Create
+  form(action="/users/create", method="POST")
+  .form-group
+    label(for='exampleInputEmail1') Name
+    input.form-control(type='text', placeholder='Your name')
+  .form-group
+    label(for='exampleInputPassword1') Phone
+    input.form-control(type='password', placeholder='Your phone')
+  button.btn.btn-primary(type='submit') Submit

@@ -1,0 +1,21 @@
+{
+  "users": [
+    {
+      "id": "7W1MsuD0D",
+      "name": "Quang Tuan",
+      "phone": "0988787554",
+      "email": "admin@admin.com",
+      "password": "123456",
+    },
+    {
+      "id": "UwTeXpJZU",
+      "name": "Le Anh",
+      "phone": "0988878789"
+    },
+    {
+      "name": "New name n",
+      "phone": "09889878",
+      "id": "5tMngLKoG"
+    }
+  ]
+}
